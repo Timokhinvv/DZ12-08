@@ -52,23 +52,29 @@
 Выгрузка в виде скрипта (plain)
 
 pg_dump <database_name> > <script_name>.sql
+
 или то же самое
 
 pg_dump -Fp <database_name> > <script_name>.sql
+
 Выгрузка в виде специального файла (custom):
 
 pg_dump -Fc <database_name> > <file_name>.dump
+
 Выгрузка в виде каталога:
 
 pg_dump -Fd <database_name> -f <dirname>
+
 Выгрузка в виде tar-архива:
 
 pg_dump -Ft <database_name> -f <tar_name>.tar
+
 Все указанные форматы приходны для восстановления через pg_restore.
 
 Восстановление:
 
 pg_restore -d <database_name> <file_name>
+
 При этом база данных уже должна быть создана, но быть пустой.
 
 

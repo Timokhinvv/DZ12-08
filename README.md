@@ -49,7 +49,8 @@
 
 ---
 ### 2.1. С помощью официальной документации приведите пример команды резервирования данных и восстановления БД (pgdump/pgrestore).
-                                                                                                                                           Выгрузка в виде скрипта (plain)
+                                                                                                                                          
+                                                                                                                                          ### Выгрузка в виде скрипта (plain)
 
 pg_dump <database_name> > <script_name>.sql
 
@@ -61,7 +62,7 @@ pg_dump -Fp <database_name> > <script_name>.sql
 
 pg_dump -Fc <database_name> > <file_name>.dump
 
-Выгрузка в виде каталога:
+### Выгрузка в виде каталога:
 
 pg_dump -Fd <database_name> -f <dirname>
 
@@ -71,7 +72,7 @@ pg_dump -Ft <database_name> -f <tar_name>.tar
 
 Все указанные форматы приходны для восстановления через pg_restore.
 
-Восстановление:
+### Восстановление:
 
 pg_restore -d <database_name> <file_name>
 
